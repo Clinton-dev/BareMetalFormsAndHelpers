@@ -24,13 +24,13 @@
  <%# end %>
 
 
-<%= form_for @user, url: { action: "create"} do |f|%>
+<%= form_for @user do |f|%>
   <%= f.label :username%>
   <%= f.text_field :username, placeholder: 'john wick'%><br /><br />
   <%= f.label :email%>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <%= f.email_field :email, placeholder: 'email@example.com'%><br /><br />
   <%= f.label :password%>
-  <%= f.password_field :username%><br /><br />
+  <%= f.password_field :password%><br /><br />
   <%= f.submit%>
 <% end %>
